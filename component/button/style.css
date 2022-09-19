@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.btn-g{
+    position: fixed;
+    bottom: 0;
+    padding: 30px 5%;
+    width: 100%;
+    background: linear-gradient(#00000000, #fff 30%);
+}
+
+.btn{
+    display: flex;
+    background-color: #338ff9;
+    padding: 17px;
+    width: 100%;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 15px;
+}
