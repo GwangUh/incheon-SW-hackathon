@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.toolbar{
+    display: flex;
+    gap: 10px;
+    padding: 20px 6% 17px;
+    font-size: 18px;
+    justify-content: space-between;
+    align-items: center;
+    color: #555;
+    border-bottom: 0.5px #ccc solid;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+}
+.toolbar p{
+    margin: 0;
+}
+
+.list{
+    padding: 90px 6%;
+}
+
+.list select{
+    padding: 7px 12px;
+    border-radius: 50px;
+    border: solid 1px #ccc;
+    margin-bottom: 30px;
+    color: #555;
+    -webkit-appearance:none;
+    outline: none;
+}
+
+.list .item{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 0.5px #ddd solid;
+}
+
+.list .item .info p{
+    margin: 0;
+}
+
+.list .item .info .title{
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.list .item .info .detail{
+    display: flex;
+    font-size: 13px;
+    color: #999;
+    align-items: center;
+}
+
+.list .item .info .detail p{
+    margin-right: 10px;
+}
+
+.list .item img.info{
+    width: 70px;
+}
+
+
+img.emoji {
+    height: 1em;
+    width: 1em;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.1em;
+ }
