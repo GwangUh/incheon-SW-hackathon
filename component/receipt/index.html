@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/90ef3c60af.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="toolbar">
+    <div><i class="fa-solid fa-arrow-left"></i></div>
+    <p>영수증</p>
+    <div></div>
+  </div>
+
+  <div class="wrap">
+    <p class="success">주문 완료</p>
+    <p class="say">주문하신 요리를 곧 준비해<br>드리겠습니다</p>
+
+    <div class="check">
+      <div class="each-box">
+        <p class="width">주문 내역</p>
+        <div>
+          <p>부대찌개 2개 14000원</p>
+          <p>제육볶음 1개 6000원</p>
+          <p>사이다 2개 4000원</p>
+          <p class="total">total 24000원</p>
+        </div>
+      </div>
+
+      <div class="each-box">
+        <p class="width">주문 테이블</p>
+        <p>14번 테이블</p>
+      </div>
+
+      <div class="each-box">
+        <p class="width">예상 시간</p>
+        <p id="timer"></p>
+      </div>
+    </div>
+
+    <div class="btn-g">
+      <a href="#" class="btn">종료</a>
+      <a href="#" class="btn">추가 주문</a>
+    </div>
+  </div>
+
+
+</body>
+
+<script>
+  var time = 2800;
+  var min = "";
+  var sec = "";
+
+  var x = setInterval(()=>{
+    min = parseInt(time / 60);
+    sec = time % 60;
+
+    document.getElementById("timer").innerHTML = min + "분 " + sec + "초";
+    time--;
+
+    if (time < 0) {
+      clearInterval(x);
+      document.getElementById("timer").innerHTML = "맛있게 드세요!";
+    }
+  }, 1000);
+
+</script>
+
+</html>
